@@ -14,7 +14,7 @@ export const Pill: React.FC<PillProps> = ({
   return (
     <div
       className={cn(
-        "px-6 py-2 rounded-full text-sm font-semibold tracking-wide uppercase inline-block",
+        "w-fit px-6 py-2 rounded-full text-sm font-semibold tracking-wide uppercase inline-block",
         variant === "dark"
           ? "bg-[var(--ui-dark-700)] text-muted-foreground"
           : "bg-[#E5EDFA] text-[#1F52C0]",

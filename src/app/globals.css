@@ -116,13 +116,44 @@
   --sidebar-ring: oklch(0.552 0.016 285.938);
 
   --ui-dark-700: #070C14;
+  --ui-dark-300: #181E26;
+  --ui-light-600: #828E9D;
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
+    font-family: var(--font-manrope), sans-serif;
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  /* === Headings === */
+  .text-h1         { @apply text-[68px] leading-[1.2] font-medium; }
+  .text-h1-giant   { @apply text-[320px] leading-[1.2] font-medium; }
+  .text-h2         { @apply text-[58px] leading-[1.2] font-medium; }
+  .text-h3         { @apply text-[44px] leading-[1.3] font-medium; }
+  .text-h3-number  { @apply text-[64px] leading-[1.1] font-medium; }
+  .text-h3-counter { @apply text-[42px] leading-[1.2] font-medium; }
+  .text-h4         { @apply text-[34px] leading-[1.2] font-medium; }
+  .text-h4-m       { @apply text-[30px] leading-[1.2] font-medium; }
+  .text-h4-s       { @apply text-[26px] leading-[1.3] font-medium; }
+  .text-h5-l       { @apply text-[24px] leading-[1.6] font-medium; }
+  .text-h5         { @apply text-[22px] leading-[1.5] font-medium; }
+  .text-h6         { @apply text-[20px] leading-[1.5] font-medium; }
+  .text-h6-s       { @apply text-[17px] leading-[1.2] font-medium; }
+
+  /* === Body text === */
+  .text-body           { @apply text-[18px] leading-[1.6]; }
+  .text-body-s         { @apply text-[16px] leading-[1.6]; }
+  .text-body-s-secondary { @apply text-[16px] leading-[1.0] text-muted; }
+  .text-body-xs        { @apply text-[15px] leading-[1.2]; }
+  .text-body-l         { @apply text-[19px] leading-[1.6]; }
+  .text-body-xl        { @apply text-[20px] leading-[1.6]; }
+  .text-navigation     { @apply text-[18px] leading-[2.3]; }
+}
+  

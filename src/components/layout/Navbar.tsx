@@ -76,7 +76,7 @@ export default function NavBar() {
         scrolled ? "" : ""
       }`}
     >
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-5">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-4 lg:px-4 py-5">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0 text-4xl font-bold">
@@ -84,7 +84,7 @@ export default function NavBar() {
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex md:items-center md:space-x-10 text-[#828E9D]">
+          <div className="hidden md:flex md:items-center md:space-x-10 text-navigation text-[#828E9D]">
             {["Features", "Pricing", "Blog", "Contact"].map((label) => (
               <Link
                 key={label}
