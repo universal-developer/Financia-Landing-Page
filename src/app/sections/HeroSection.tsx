@@ -43,7 +43,7 @@ export default function HeroSection() {
 
         {/* Right column */}
         <div className="order-2 md:order-2">
-          <p className="text-white text-2xl">Hello world</p>
+          <p className="text-white text-2xl">Second col</p>
         </div>
       </div>
     </section>
